@@ -36,7 +36,14 @@ body {
     color: #FFFFFF;
     font-weight: 500;
     font-size: 16px;
-
+    cursor: pointer;
+    transition: all 500ms;
+    &:hover {
+        box-shadow: 0px 4px 15px 0px #000000a1;
+        filter: brightness(110%);
+    }
+        
+        
 }
 
 
@@ -168,6 +175,9 @@ body {
     &__btn {
         display: flex;
         justify-content: center;
+
+        
+        
     }
 }
 
@@ -300,6 +310,8 @@ body {
             width: 80px;
             height: 29px;
             background-color: $tertiary-color;
+            box-shadow: 0px 2px 4px 0px #00000026;
+
         }
 
         
