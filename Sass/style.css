@@ -15,7 +15,7 @@ body {
   display: flex;
   width: 218px;
   height: 50px;
-  background: linear-gradient(#9356DC, #FF79DA);
+  background: linear-gradient(0deg, #9356DC, #FF79DA);
   border-radius: 25px;
   border: none;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
@@ -93,6 +93,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 440px;
+  gap: 30px;
   width: 100%;
   padding-left: 15px;
   background-color: white;
@@ -100,28 +101,31 @@ body {
 .fonctionnement h2 {
   display: flex;
   margin-top: 30px;
+  padding-left: 15px;
   margin-bottom: 0;
 }
 .fonctionnement__cards {
   display: flex;
-  position: relative;
   flex-direction: column;
+  gap: 20px;
   align-items: center;
 }
 .fonctionnement__card {
   display: flex;
   align-items: center;
+  position: relative;
   justify-content: flex-start;
-  width: 95%;
+  width: 85%;
   height: 72px;
   background-color: #F6F6F6;
   border-radius: 20px;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
 }
 .fonctionnement__card .circle {
   display: flex;
   position: absolute;
   color: white;
-  left: -2px;
+  left: -12px;
   width: 24px;
   height: 24px;
   border-radius: 25px;
@@ -135,6 +139,9 @@ body {
   padding-left: 28px;
   width: 247px;
   gap: 20px;
+}
+.fonctionnement__content .purple {
+  color: #9356DC;
 }
 .fonctionnement__content i {
   color: #7E7E7E;
