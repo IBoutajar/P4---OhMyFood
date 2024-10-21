@@ -263,4 +263,16 @@ body {
 }
 .restaurants__heart {
   display: flex;
+}
+.restaurants__heart .btn__heart {
+  display: flex;
+  border: none;
+  background-color: white;
+}
+.restaurants__heart .btn__heart--on {
+  display: flex;
+}
+.restaurants__heart .btn__heart--off {
+  display: none;
+  color: #9356DC;
 }/*# sourceMappingURL=style.css.map */

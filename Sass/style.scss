@@ -329,6 +329,24 @@ body {
 
     &__heart {
         display: flex;
+
+        .btn__heart {
+            display: flex;
+            border: none;
+            background-color: white;
+
+            
+
+            &--on {
+                display: flex;
+            }
+
+
+            &--off {
+                display: none;
+                color: $primary-color;
+            }
+        }
     }
 }
 
