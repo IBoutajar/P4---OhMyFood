@@ -267,12 +267,18 @@ body {
 .restaurants__heart .btn__heart {
   display: flex;
   border: none;
+  position: relative;
   background-color: white;
 }
 .restaurants__heart .btn__heart--on {
   display: flex;
 }
-.restaurants__heart .btn__heart--off {
-  display: none;
+.restaurants__heart .btn__heart .full-heart {
   color: #9356DC;
+  opacity: 0;
+  position: absolute;
+  transition: opacity 200ms;
+}
+.restaurants__heart .btn__heart:hover .full-heart {
+  opacity: 1;
 }/*# sourceMappingURL=style.css.map */

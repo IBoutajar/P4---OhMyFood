@@ -333,18 +333,28 @@ body {
         .btn__heart {
             display: flex;
             border: none;
+            position: relative;
             background-color: white;
 
-            
+
 
             &--on {
                 display: flex;
+                
             }
 
 
-            &--off {
-                display: none;
+            .full-heart {
                 color: $primary-color;
+                opacity: 0;
+                position: absolute;
+                transition: opacity 200ms;
+            }
+
+            &:hover .full-heart {
+                opacity: 1;
+            
+
             }
         }
     }
