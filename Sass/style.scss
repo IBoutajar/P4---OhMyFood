@@ -9,6 +9,11 @@ $tertiary-color : #99E2D0;
     font-family:"Roboto", sans-serif;
 }
 
+a{
+    text-decoration: inherit;
+    color: inherit;
+}
+
 h1 {
     font-family: "Shrikhand", serif;
 }
@@ -120,10 +125,10 @@ body {
 .fonctionnement {
     display: flex;
     flex-direction: column;
-    height: 440px;
+    justify-content: flex-start;
+    height: 400px;
     gap: 30px;
     width: 100%;
-    padding-left: 15px;
     background-color: white;
 
     h2 {
@@ -189,4 +194,88 @@ body {
 }
 
 
+//***** Restaurants *****//
+
+.restaurants {
+    display: flex;
+    gap: 20px;
+    padding-bottom: 50px;
+    flex-direction: column;
+
+    h2 {
+        display: flex;
+        padding-left: 19px;
+        margin-top: 40px;
+        margin-bottom: 0;
+    }
+
+    &__cards {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        gap: 18px;
+    }
+
+    &__card {
+        box-shadow: 0px 4px 15px 0px #0000001A;
+        position: relative;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        height: 251px;
+        width: 340px;
+        background-color: white;
+        gap: 10px;
+
+        img {
+            display: flex;
+            height: 70%;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 15px 15px 0px 0px;
+        }
+
+        .new {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            top: 13px;
+            left: 248px;
+            width: 80px;
+            height: 29px;
+            background-color: $tertiary-color;
+        }
+
+        
+    }
+
+
+    &__content {
+        display: flex;
+        align-items: center;
+        width: 95%;
+        justify-content: space-between;
+
+    }
+
+
+    &__txt {
+        display: flex;
+        padding-left: 15px;
+        flex-direction: column;
+        gap: 10px;
+
+        h3, p {
+            margin: 0;
+        }
+    }
+
+
+    &__heart {
+        display: flex;
+    }
+}
 
