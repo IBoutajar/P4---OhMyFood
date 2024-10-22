@@ -19,7 +19,7 @@ body {
     height: 70%;
     z-index: 2;
     background-color:$tertiary-color ;
-    animation: fade 1.5s linear forwards
+    animation: fade 2.5s linear forwards
 }
 
 .loader {
@@ -30,7 +30,7 @@ body {
     border-radius: 50%;
     border: 7px solid transparent;
     border-top-color: white;
-    animation: spin 1.5s linear;
+    animation: spin 2.5s linear;
     
 }
 
