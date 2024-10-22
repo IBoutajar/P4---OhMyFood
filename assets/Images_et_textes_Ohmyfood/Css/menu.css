@@ -193,6 +193,16 @@ main {
   display: flex;
   flex-direction: column;
   gap: 12px;
+  animation: aparition 1000ms both;
+}
+.plat__section--1 {
+  animation-delay: 100ms;
+}
+.plat__section--2 {
+  animation-delay: 300ms;
+}
+.plat__section--3 {
+  animation-delay: 500ms;
 }
 .plat__line {
   display: flex;
@@ -292,21 +302,6 @@ main {
   .plat__cards .plat__description h2 {
     font-size: 18px;
   }
-  .basPage {
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: flex-start;
-    height: 90px;
-    gap: 50px;
-  }
-  .basPage__links {
-    flex-direction: row;
-    gap: 25px;
-  }
-  .basPage__link {
-    align-items: center;
-    font-size: 13px;
-  }
 }
 @media (min-width: 1024px) {
   .plat__section {
@@ -319,20 +314,5 @@ main {
   }
   .plat__cards .plat__description h2 {
     font-size: 18px;
-  }
-  .basPage {
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: flex-start;
-    height: 90px;
-    gap: 50px;
-  }
-  .basPage__links {
-    flex-direction: row;
-    gap: 25px;
-  }
-  .basPage__link {
-    align-items: center;
-    font-size: 14px;
   }
 }/*# sourceMappingURL=menu.css.map */

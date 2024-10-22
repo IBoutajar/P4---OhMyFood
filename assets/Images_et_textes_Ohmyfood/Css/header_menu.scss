@@ -1,0 +1,41 @@
+.hautPage {
+    display: flex;
+    flex-direction: column;
+
+    img {
+        width: 162px;
+        height: 44px;
+        object-fit: contain;
+    }
+
+    .logo {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        width: 96%;
+        height: 63px;
+        z-index: 1;
+    }
+
+    
+
+    .retour_logo {
+        display: flex;
+        background-color: white;
+        align-items: center;
+    }
+
+    .retour {
+        display: flex;
+        height: 16px;
+        align-items: center;
+        padding-left: 15px;
+    }
+
+}
+
+
+
+

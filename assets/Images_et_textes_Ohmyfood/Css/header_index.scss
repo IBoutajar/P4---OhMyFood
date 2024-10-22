@@ -1,0 +1,33 @@
+.hautPage {
+    display: flex;
+    flex-direction: column;
+
+    img {
+        width: 162px;
+        height: 44px;
+        object-fit: contain;
+    }
+
+    .logo {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        box-shadow: 0px 2px 4px 0px #00000026;
+        width: 100%;
+        height: 63px;
+        z-index: 1;
+    }
+
+    .location {
+        display: flex;
+        background-color:#EAEAEA ;
+        justify-content: center;
+        align-items: center;
+        gap: 17px;
+        box-shadow: 0px 4px 4px 0px #00000040;
+    
+    }
+
+}

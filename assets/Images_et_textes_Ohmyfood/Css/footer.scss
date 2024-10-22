@@ -1,0 +1,94 @@
+.basPage {
+    display: flex;
+    flex-direction: column;
+    height: 186px;
+    background-color: #353535;
+    padding: 30px;
+    gap: 10px;
+    justify-content: space-evenly;
+
+    &__titre {
+        display: flex;
+        font-family: "Shrikhand", serif;
+        color: white;
+        font-size: 20px;
+    }
+
+    &__links {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+    }
+
+    &__link {
+        display: flex;
+        color: white;
+        gap: 15px;
+
+
+        &--bold {
+            font-weight: 500;
+        }
+
+
+        .icon {
+            display: flex;
+            width: 11px;
+            height: 13px;
+        }
+
+    }
+}
+
+
+
+//***** Média queries Tablette (768px-1024px) *****//
+
+@media (min-width: 768px) and (max-width : 1023px) {
+    .basPage {
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: flex-start;
+        height: 90px;
+        gap: 50px;
+
+
+        &__links {
+            flex-direction: row;
+            gap: 25px;
+        }
+
+        &__link {
+            align-items: center;
+            font-size: 13px;
+        }
+
+    }
+}
+
+
+
+//***** Media Queries Pc (1024px - 1440px)
+
+@media (min-width : 1024px) {
+    .basPage {
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: flex-start;
+        height: 90px;
+        gap: 50px;
+
+
+        &__links {
+            flex-direction: row;
+            gap: 25px;
+        }
+
+        &__link {
+            align-items: center;
+            font-size: 14px;
+        }
+
+    }
+}

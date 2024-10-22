@@ -11,7 +11,7 @@ $tertiary-color : #99E2D0;
         text-overflow: ellipsis;
 }
 
-
+//***** animation pour faire apparaitre le menu *****//
 @keyframes aparition {
     0% {
         opacity: 0;
@@ -249,6 +249,19 @@ main {
         display: flex;
         flex-direction: column;
         gap: 12px;
+        animation: aparition 1000ms both;
+        
+        &--1{
+            animation-delay: 100ms;
+        }
+
+        &--2 {
+            animation-delay: 300ms;
+        }
+
+        &--3{
+            animation-delay: 500ms;
+        }
     }
     
     &__line {
@@ -383,25 +396,7 @@ main {
 
 
 
-    .basPage {
-        flex-direction: row-reverse;
-        align-items: center;
-        justify-content: flex-start;
-        height: 90px;
-        gap: 50px;
-
-
-        &__links {
-            flex-direction: row;
-            gap: 25px;
-        }
-
-        &__link {
-            align-items: center;
-            font-size: 13px;
-        }
-
-    }
+    
 
 }
 
@@ -425,24 +420,6 @@ main {
     }
 
 
-    .basPage {
-        flex-direction: row-reverse;
-        align-items: center;
-        justify-content: flex-start;
-        height: 90px;
-        gap: 50px;
-
-
-        &__links {
-            flex-direction: row;
-            gap: 25px;
-        }
-
-        &__link {
-            align-items: center;
-            font-size: 14px;
-        }
-
-    }
+    
 
 }
