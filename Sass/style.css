@@ -12,7 +12,8 @@ h1 {
 }
 
 body {
-  margin: 0;
+  margin: auto;
+  max-width: 1440px;
   background-color: #F6F6F6;
 }
 
@@ -294,4 +295,94 @@ body {
 }
 .restaurants__heart .btn__heart:hover .full-heart {
   opacity: 1;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .fonctionnement__card {
+    width: 55%;
+    justify-content: center;
+  }
+  .restaurants__cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+    gap: 60px;
+  }
+  .basPage {
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: flex-start;
+    height: 90px;
+    gap: 50px;
+  }
+  .basPage__links {
+    flex-direction: row;
+    gap: 25px;
+  }
+  .basPage__link {
+    align-items: center;
+    font-size: 14px;
+  }
+}
+@media (min-width: 1024px) {
+  body {
+    max-width: 1440px;
+  }
+  .reserver {
+    align-items: center;
+  }
+  .reserver__txt {
+    gap: 20px;
+    width: 900px;
+    align-items: center;
+    justify-content: center;
+  }
+  .reserver__titre {
+    width: 100%;
+  }
+  .reserver__titre h2 {
+    padding-top: 30px;
+    font-size: 39px;
+    margin-top: 0;
+  }
+  .fonctionnement {
+    height: 215px;
+  }
+  .fonctionnement__cards {
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+  }
+  .fonctionnement__card {
+    width: 25%;
+    height: 60px;
+  }
+  .restaurants__cards {
+    flex-direction: row;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  .restaurants__card {
+    width: 490px;
+  }
+  .restaurants__card .new {
+    top: 20px;
+    left: 390px;
+  }
+  .basPage {
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: flex-start;
+    height: 90px;
+    gap: 50px;
+  }
+  .basPage__links {
+    flex-direction: row;
+    gap: 25px;
+  }
+  .basPage__link {
+    align-items: center;
+    font-size: 14px;
+  }
 }/*# sourceMappingURL=style.css.map */

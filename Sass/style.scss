@@ -19,7 +19,8 @@ h1 {
 }
 
 body {
-    margin: 0;
+    margin: auto;
+    max-width: 1440px;
     background-color: #F6F6F6;
 }
 
@@ -378,3 +379,152 @@ body {
     }
 }
 
+
+
+
+
+
+
+//***** Média queries Tablette (768px-1024px) *****//
+
+@media (min-width : 768px) and (max-width : 1023px) {
+    
+    .fonctionnement__card {
+        width: 55%;
+        justify-content: center;
+    }
+
+
+
+    .restaurants__cards {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 90%;
+        margin: auto;
+        gap: 60px;
+    }
+
+
+
+
+    .basPage {
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: flex-start;
+        height: 90px;
+        gap: 50px;
+
+
+        &__links {
+            flex-direction: row;
+            gap: 25px;
+        }
+
+        &__link {
+            align-items: center;
+            font-size: 14px;
+        }
+
+    }
+
+}
+
+
+
+
+
+
+//***** Media Queries Pc (1024px - 1440px)
+
+@media (min-width : 1024px) {
+    body {
+        max-width: 1440px;
+    }
+
+
+    .reserver {
+        align-items: center;
+        &__txt {
+            gap: 20px;
+            width: 900px;
+            align-items: center;
+            justify-content: center;
+         
+        }
+        &__titre {
+            width: 100%;
+        }
+
+        &__titre h2 {
+            
+                padding-top: 30px;
+                font-size: 39px;
+                margin-top: 0;
+            
+        }
+
+
+    }
+
+    
+
+    .fonctionnement {
+        height: 215px;
+
+
+        &__cards {
+            flex-direction: row;
+            justify-content: center;
+            gap: 30px;
+        }
+
+
+
+        &__card {
+            width: 25%;
+            height: 60px;
+        }
+    }
+
+
+    .restaurants {
+
+        &__cards {
+            flex-direction: row;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        &__card {
+            width: 490px;
+
+
+            .new {
+                top: 20px;
+                left: 390px;
+            }
+        }
+
+    }
+
+
+    .basPage {
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: flex-start;
+        height: 90px;
+        gap: 50px;
+
+
+        &__links {
+            flex-direction: row;
+            gap: 25px;
+        }
+
+        &__link {
+            align-items: center;
+            font-size: 14px;
+        }
+
+    }
+}
