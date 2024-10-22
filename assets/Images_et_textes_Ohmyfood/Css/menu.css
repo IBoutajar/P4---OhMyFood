@@ -1,0 +1,338 @@
+@keyframes aparition {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+h1 {
+  font-family: "Shrikhand", serif;
+}
+
+body {
+  margin: auto;
+  max-width: 1440px;
+  background-color: white;
+}
+
+.btn {
+  display: flex;
+  width: 186px;
+  margin-right: auto;
+  margin-left: auto;
+  height: 50px;
+  background: linear-gradient(0deg, #9356DC, #FF79DA);
+  border-radius: 25px;
+  border: none;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 500ms;
+}
+.btn:hover {
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.631372549);
+  filter: brightness(110%);
+}
+
+main {
+  position: relative;
+}
+
+.hautPage {
+  display: flex;
+  flex-direction: column;
+}
+.hautPage img {
+  width: 162px;
+  height: 44px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.hautPage .logo {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 96%;
+  height: 63px;
+  z-index: 1;
+}
+.hautPage .retour_logo {
+  display: flex;
+  background-color: white;
+  align-items: center;
+}
+.hautPage .retour {
+  display: flex;
+  height: 16px;
+  align-items: center;
+  padding-left: 15px;
+}
+
+.basPage {
+  display: flex;
+  flex-direction: column;
+  height: 186px;
+  background-color: #353535;
+  padding: 30px;
+  gap: 10px;
+  justify-content: space-evenly;
+}
+.basPage__titre {
+  display: flex;
+  font-family: "Shrikhand", serif;
+  color: white;
+  font-size: 20px;
+}
+.basPage__links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.basPage__link {
+  display: flex;
+  color: white;
+  gap: 15px;
+}
+.basPage__link--bold {
+  font-weight: 500;
+}
+.basPage__link .icon {
+  display: flex;
+  width: 11px;
+  height: 13px;
+}
+
+.back {
+  background-color: #F6F6F6;
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 44px;
+  bottom: -35px;
+  left: 0px;
+}
+
+.imageMenu {
+  display: flex;
+  height: 275px;
+  z-index: -1;
+}
+.imageMenu img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.plat {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: #F6F6F6;
+  gap: 40px;
+  margin: auto;
+  max-width: 1055px;
+  bottom: 35px;
+  height: 1130px;
+  border-radius: 25px 25px 0px 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.plat__titre {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+.plat__titre h1 {
+  font-size: 23px;
+  font-weight: 400;
+}
+.plat__titre .btn__heart {
+  display: flex;
+  border: none;
+  position: relative;
+  align-items: center;
+  cursor: pointer;
+  width: 22px;
+  height: 21px;
+  background-color: #F6F6F6;
+}
+.plat__titre .btn__heart .full-heart {
+  color: #9356DC;
+  opacity: 0;
+  position: absolute;
+  transition: opacity 200ms;
+}
+.plat__titre .btn__heart .full-heart::before {
+  background-image: linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: rgba(0, 0, 0, 0.2);
+}
+.plat__titre .btn__heart:hover .full-heart {
+  opacity: 1;
+}
+.plat__section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.plat__line {
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+}
+.plat__line .text {
+  font-size: 16px;
+  display: flex;
+  line-height: 18.75px;
+}
+.plat__line .line {
+  display: flex;
+  border: 3px solid #99E2D0;
+  width: 40px;
+}
+.plat__cards {
+  display: flex;
+  gap: 12px;
+  flex-direction: column;
+}
+.plat__cards .plat__card {
+  display: flex;
+  position: relative;
+  background-color: white;
+  box-shadow: 0px 4.01px 15.04px 0px rgba(0, 0, 0, 0.1019607843);
+  width: 100%;
+  height: 69px;
+  border-radius: 15px;
+  overflow: hidden;
+  padding-left: 11px;
+  justify-content: space-between;
+}
+.plat__cards .plat__card:hover .plat__price {
+  transform: translate(-59px);
+}
+.plat__cards .plat__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 66%;
+  gap: 5px;
+}
+.plat__cards .plat__description h2 {
+  display: block;
+  width: 100%;
+  margin: 0;
+  font-size: 17px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.plat__cards .plat__description p {
+  display: block;
+  width: 100%;
+  font-size: 12px;
+  margin: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.plat__cards .plat__price {
+  display: flex;
+  height: 57px;
+  padding-right: 10px;
+  gap: 10px;
+  align-items: flex-end;
+  position: relative;
+  left: 68px;
+  transition: transform 500ms;
+}
+.plat__cards .plat__check {
+  position: relative;
+  display: flex;
+  top: 12px;
+  left: 1px;
+  justify-content: center;
+  background-color: #99E2D0;
+  width: 59px;
+  height: 69px;
+}
+.plat__cards .plat__check i {
+  display: flex;
+  color: white;
+  align-items: center;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .plat__section {
+    margin-left: auto;
+    width: 70%;
+    margin-right: auto;
+  }
+  .plat__cards .plat__description p {
+    font-size: 17px;
+  }
+  .plat__cards .plat__description h2 {
+    font-size: 18px;
+  }
+  .basPage {
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: flex-start;
+    height: 90px;
+    gap: 50px;
+  }
+  .basPage__links {
+    flex-direction: row;
+    gap: 25px;
+  }
+  .basPage__link {
+    align-items: center;
+    font-size: 13px;
+  }
+}
+@media (min-width: 1024px) {
+  .plat__section {
+    margin-left: auto;
+    width: 70%;
+    margin-right: auto;
+  }
+  .plat__cards .plat__description p {
+    font-size: 17px;
+  }
+  .plat__cards .plat__description h2 {
+    font-size: 18px;
+  }
+  .basPage {
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: flex-start;
+    height: 90px;
+    gap: 50px;
+  }
+  .basPage__links {
+    flex-direction: row;
+    gap: 25px;
+  }
+  .basPage__link {
+    align-items: center;
+    font-size: 14px;
+  }
+}/*# sourceMappingURL=menu.css.map */
