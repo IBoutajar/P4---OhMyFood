@@ -19,6 +19,18 @@
   height: 63px;
   z-index: 1;
 }
+
+.hautPage .logo h1 {
+  display: flex;
+}
+
+.hautPage .logo h1 img{
+  width: 162px;
+  height: 44px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 .hautPage .location {
   display: flex;
   background-color: #EAEAEA;
