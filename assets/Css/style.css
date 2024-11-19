@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   font-family: "Roboto", sans-serif;
 }
@@ -17,6 +18,7 @@ body {
   background-color: #F6F6F6;
 }
 
+/***** Création et animation du Bouton *****/
 .btn {
   display: flex;
   width: 218px;

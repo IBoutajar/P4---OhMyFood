@@ -202,6 +202,7 @@ main {
   overflow: hidden;
   padding-left: 11px;
   justify-content: space-between;
+  cursor: pointer;
 }
 .plat__cards .plat__card:hover .plat__price {
   transform: translate(-59px);

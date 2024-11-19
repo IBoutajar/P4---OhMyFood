@@ -116,7 +116,7 @@ main {
 }
 
 
-//***** Footer *****//
+
 
 
 
@@ -262,6 +262,7 @@ main {
             overflow: hidden;
             padding-left: 11px;
             justify-content: space-between;
+            cursor: pointer;
             
             //***** Animation check *****//
             &:hover .plat__price {
